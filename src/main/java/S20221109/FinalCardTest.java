@@ -28,6 +28,6 @@ public class FinalCardTest {
         System.out.println(c.KIND);
         System.out.println(c.NUMBER);
         System.out.println(c);
-//나는
+//나는 test
     }
 }

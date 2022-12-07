@@ -75,5 +75,6 @@ class SpaceException extends Exception{
 class MemoryException extends Exception{
     MemoryException(String msg){
         super(msg);
+        //test
     }
 }

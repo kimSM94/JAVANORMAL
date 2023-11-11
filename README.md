@@ -193,4 +193,23 @@
         * 해싱기법을 사용하는 HashMap이나 HashSet과 같은 클래스에 저장할 객체라면 반드시 hashCode메서드를 오버라이딩해야 한다.
         - identityHashCode는 객체의 주소값으로 해시코드를 생성하기 떄문에 모든 객체에 대해 항상 다른 해시코드값을 반환할 것을 보장
         EX) S20221214.HashCodEx1.java
-        
+
+
+<h3>Collections Framework</h3>
+<header>LinkedList </header>
+1. 크기를 변경할 수 없다.
+-> 실행속도를 향상시키기 위해서는 충분히 큰 크기의 배열을 생성해야 하므로 메모리가 낭비
+2. 비순차적인 데이터의 추가 또는 삭제에 시간이 많이 걸린다.
+-> 차례대로 데이터를 추가하고 마지막에서부터 데이터를 삭제하는 것은 빠르지만, 중간에 추가하려면 빈자리를 만들기 위해 다른 데이터들을 복사해서 이동해야한다.
+
+※ ArrayList vs LinkedList
+1. 순차적으로 추가/삭제하는 경우에는 ArrayList가 LinkedList보다 빠르다.
+2. 중간 데이터를 추가/삭제하는 경우에는 LinkedList가 ArrayList보다 빠르다
+- LinkedList는 각 요소간의 연결만 변경해주면 되기 떄문에 처리속도가 상당히 빠르다.
+- 반면에 ArrayList는 각 요소들을 재배치하여 추가할 공간을 확보하거나 빈 공간을 채워야하기 때문에 처리속도가 늦다.
+
+<header>Stack과 Queue</header>
+1. Stack : LIFO(Last In First Out)
+- 수식계산, 수식괄호검사, 워드프로세서의 undo/redo, 웹브라우저의 뒤로/앞으로
+2. Queue : FIFO(First In First Out)
+- 최근사용문서, 인쇄작업 대기목록, 버퍼(buffer)
